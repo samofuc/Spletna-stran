@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <title>Kako daleč je gora?</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-content { background-size: contain; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout: true
+background-image: url(background.jpg)
+background-position: center
+background-repeat: no-repeat
+<br>
+<br>
+<br>
+
+---
+
+class: center, middle
+
+# Trigonometrični problem
+
+---
+
+name: Spoznajmo ta trigonometrični problem
+# Spoznajmo ta trigonometrični problem
+
+<br>
+
+Predstavljajmo si, da sedimo na vlaku in skozi okno opazujemo veliko goro, ki se nam zdi vedno manjša.
+V hipu se nam porodi misel: "Kako velika sploh **je** gora? Mogoče pa lahko vse skupaj izračunamo...Pa dajmo poskusit!
+
+Ker se nam je ideja porodila prepozno, smo prvi dan na končnem postanku izmerili le kot $\beta$ med ravnino in premico, ki predstavlja pogled na vrh gore.
+Drugi dan smo meritve ravno tako ponovili ob končnem postanku, vendar tokrat smo izmerili dva podatka, kot $\alpha$ in tokrat tudi dolžino poti $a$ med zadnjim postankom in današnjim.
+
+---
+
+# Poznani podatki/ Uvedba imen naših spremenljivk
+
+<br>
+
+<span style="background-color:limegreen">Poznani podatki</span>:
+--
+
+- kot $\alpha$ = 2.0 &deg;
+--
+
+- kot $\beta$ = 2.7 &deg;
+--
+
+- dolžina poti $a$ = 19,312 km
+--
+
+
+<span style="background-color:red">Iskani podatki</span>:
+--
+
+- Zanima nas <span style="color:orange">dolžina $b$ </span>, ki smo jo opravili prvi dan
+--
+
+- Zanima nas <span style="color:orange"> višina gore $h$ </span>
+--
+
+<h4>Opomba:</h4> 
+<i>V nadaljevanju bomo predpostavili, da je Zemlja ravna ter da se nadmorska višina gore <b>NE</b> spreminja</i>
+
+---
+
+# Reševanje problema 
+
+<br>
+
+Problem bomo rešili v štirih korakih:
+1. <span style="background-color:Cyan">Razumevanje problema in vizualizacija 
+  - Narišimo problem za lažjo predstavo </span>
+--
+
+2. <span style="background-color:limegreen">Pripravimo načrt reševanja problema 
+  - Razmislimo o količinah, ki so podane in kako so povezane</span>
+--
+
+3. <span style="background-color:orange">Rešimo problem 
+  - Vstavimo količine v enačbe in izračunamo želeni rezultat </span>
+--
+
+4. <span style="background-color:red">Pogled nazaj na reševanje 
+  - Tukaj si moramo postaviti pomembno vprašanje, če imajo izračunane vrednosti **smisel**.
+  - Ali bi lahko rezultat dobili tudi na kakšen drugi način?
+  - Katere količine lahko **zamenjamo** in bomo ravno tako prišli do rezultata? </span>
+
+---
+
+name: primer
+
+<h1> Pričnimo z reševanjem! </h1>
+
+Pričnimo s <span style="color:Cyan"> prvim korakom. </span>
+
+<img src=trikotnik_gora.png alt="Prikaz problema" width=500>
+
+Zdaj ko nam je slika olajšala razumevanje, moramo sestaviti <span style="color:green"> načrt. </span>
+
+Preden pa začnemo s pripravo načrta, moramo najprej vedeti, katere **vrednosti** sploh iščemo.
+
+---
+
+# Reševanje
+
+<img src=trikotnik_gora_z_obkroženimi_vrednostimi.png alt="Prikaz problema z obkroženimi vrednosti" width=500>
+
+Iz slike je razvidno, da so poznane vrednosti obkrožene z zeleno barvo, iskane vrednosti pa z rdečo.
+
+<h4>Pomoč za lažje računanje</h4>
+Pri računanju si pomagaj s trigonometrično funkcijo tangens in izrazi vrednosti $b$ in $h$ s pomočjo enačb.
+
+---
+
+# Oblika Rešitve
+
+Pri danih pogojih izpolni tabelo:
+<img src=Prvatabela.png alt="Tabela" width=450>
+
+Ko rešiš nalogo premisli, ali ima dobljeni rezultat smisel.
+
+Pomisli, če bi s spremembo vhodnih podatkov rezultat še vedno imel smisel?
+
+Ali sprememba vpliva na smer gibanja vlaka? Pod katerimi pogoji?
+
+---
+
+<h1 id="section2">Več poti vodi na cilj</h1>
+
+Iz slike razberi podane podatke in zopet ponovi štiri korake reševanja ter dodatno napiši:
+
+-Kako dobimo $h$?
+
+-Kako dobimo kot $\alpha$?
+
+<img src= Drugnacin.png alt="Prikaz problema2" width=500>
+
+---
+
+#Primankljaj podatkov
+
+Recimo, da imamo podan samo podatek za dolžino $a$ ter kot $\beta$, manjka nam pa dolžina $b$.
+--
+
+
+Po hitrem razmisleku vidimo, da nam <span style="color:red"> primankujejo podatki </span>. Rezultata ne moremo izračunati po <span style="color:orange">standardni poti.</span>
+--
+
+
+Če želimo upoštevati prejšnji primer, potrebujemo vrednost za <span style="color:green">dolžino $b$.</span>
+--
+
+
+Tukaj implementiramo <span style="color:purple">tretji način reševanja</span>, ki je najdaljši in najmanj natančen, vendar nas lahko intuitivno privede do verjetnega odgovora.
+---
+
+#Tretji način reševanja
+
+<img src=Drugatabela.png alt="tabela2" width=800>
+
+Nalogo poskusi rešiti z *ugibanjem dolžine razdalje b*, spet s pomočjo <a href="#primer"> Pritisni name</a>. Za vsak izbrani $b$ izračunaj preostale vrednosti in označi, ali je odgovor smiselen ali ne.
+
+
+<h4> Opomba</h4>
+<i>Ker ti je odgovor za prvi primer seveda že poznan, ga uporabi, da poskusiš kako se rezultat spreminja glede na natančnost b-ja, pri drugem primeru pa se potrudi in naredi vsaj tri poskuse.</i>
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <script>
+      function klik() {
+        document.getElementById("na-klik").innerHTML = "Bomo ja!"
+      }
+    </script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+  </body>
+</html>
